@@ -1,0 +1,274 @@
+@media screen and (max-width: 600px) {
+
+    .home-div-imgbackr {
+        background-size: cover !important;
+        background-attachment: fixed !important;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: background-image 2s ease-in-out;
+    }
+
+    .home-welcome-text {
+        width: 600px;
+        height: 600px;
+        position: fixed;
+
+        left: 0;
+        right: 0;
+        top: 75%;
+        bottom: 0;
+        margin: auto;
+        max-width: 100%;
+        max-height: 100%;
+        overflow: auto;
+        text-align: center;
+        font-size: 60px;
+
+    }
+
+    .home-welcome-text p {
+        font-size: 40px;
+        text-transform: uppercase;
+        font-family: 'Acme', sans-serif;
+        letter-spacing: 5px;
+        animation: animation-scale 3s linear infinite;
+    }
+
+    .home-dropping-texts {
+        display: inline-block;
+
+        margin-top: -25px;
+        font-size: 30px;
+        text-align: right;
+        height: 36px;
+    }
+
+    .home-dropping-texts > p {
+        color: white;
+        opacity: 0;
+        position: absolute;
+        z-index: 1;
+        font-family: 'Indie Flower', cursive;
+        font-weight: bold;
+
+        box-shadow: 0px 60px 25px -20px rgba(0, 0, 0, 0.19);
+    }
+
+    .home-dropping-texts > p:nth-child(1) {
+        animation: roll 5s linear infinite 0s;
+    }
+
+    .home-dropping-texts > p:nth-child(2) {
+        animation: roll 5s linear infinite 1s;
+    }
+
+    .home-dropping-texts > p:nth-child(3) {
+        animation: roll 5s linear infinite 2s;
+    }
+
+    .home-dropping-texts > p:nth-child(4) {
+        animation: roll2 5s linear infinite 3s;
+    }
+
+    .home-dropping-texts > p:nth-child(1) {
+        animation: roll 5s linear infinite 0s;
+    }
+
+    .home-dropping-texts > p:nth-child(2) {
+        animation: roll 5s linear infinite 1s;
+    }
+
+    .home-dropping-texts > p:nth-child(3) {
+        animation: roll 5s linear infinite 2s;
+    }
+
+    .home-dropping-texts > p:nth-child(4) {
+        animation: roll2 5s linear infinite 3s;
+    }
+}
+
+@media screen and (min-width: 601px) {
+
+    .home-div-imgbackr {
+        background-size: cover !important;
+        background-attachment: fixed !important;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: background-image 2s ease-in-out;
+    }
+
+    .home-welcome-text {
+        width: 600px;
+        height: 600px;
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 75%;
+        bottom: 0;
+        margin: auto;
+        max-width: 100%;
+        max-height: 100%;
+        overflow: auto;
+        text-align: center;
+        font-size: 60px;
+
+    }
+
+    .home-welcome-text p {
+        font-size: 60px;
+        text-transform: uppercase;
+        font-family: 'Acme', sans-serif;
+        letter-spacing: 5px;
+        animation: animation-scale 3s linear infinite;
+    }
+
+    .home-dropping-texts {
+        display: inline-block;
+        margin-right: -120px;
+        margin-top: -65px;
+        font-size: 40px;
+        text-align: right;
+        height: 36px;
+    }
+
+    .home-dropping-texts > p {
+        color: white;
+        opacity: 0;
+        position: absolute;
+        z-index: 1;
+        font-family: 'Indie Flower', cursive;
+        font-weight: bold;
+
+        box-shadow: 0px 60px 25px -20px rgba(0, 0, 0, 0.19);
+    }
+
+    .home-dropping-texts > p:nth-child(1) {
+        animation: roll 5s linear infinite 0s;
+    }
+
+    .home-dropping-texts > p:nth-child(2) {
+        animation: roll 5s linear infinite 1s;
+    }
+
+    .home-dropping-texts > p:nth-child(3) {
+        animation: roll 5s linear infinite 2s;
+    }
+
+    .home-dropping-texts > p:nth-child(4) {
+        animation: roll2 5s linear infinite 3s;
+    }
+
+    .home-dropping-texts > p:nth-child(1) {
+        animation: roll 5s linear infinite 0s;
+    }
+
+    .home-dropping-texts > p:nth-child(2) {
+        animation: roll 5s linear infinite 1s;
+    }
+
+    .home-dropping-texts > p:nth-child(3) {
+        animation: roll 5s linear infinite 2s;
+    }
+
+    .home-dropping-texts > p:nth-child(4) {
+        animation: roll2 5s linear infinite 3s;
+    }
+}
+
+@keyframes roll {
+    0% {
+        font-size: 0px;
+        opacity: 0;
+        margin-left: -30px;
+        margin-top: 0px;
+        transform: rotate(-25deg);
+    }
+    3% {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    5% {
+        font-size: inherit;
+        opacity: 1;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    20% {
+        font-size: inherit;
+        opacity: 1;
+        margin-left: 0px;
+        margin-top: 0px;
+        transform: rotate(0deg);
+    }
+    27% {
+        font-size: 0px;
+        opacity: 0.5;
+        margin-left: 20px;
+        margin-top: 100px;
+    }
+    100% {
+        font-size: 0px;
+        opacity: 0;
+        margin-left: -30px;
+        margin-top: 0px;
+        transform: rotate(15deg);
+    }
+}
+
+@keyframes roll2 {
+    0% {
+        font-size: 0px;
+        opacity: 0;
+        margin-left: -30px;
+        margin-top: 0px;
+        transform: rotate(-25deg);
+    }
+    3% {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    5% {
+        font-size: inherit;
+        opacity: 1;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    30% {
+        font-size: inherit;
+        opacity: 1;
+        margin-left: 0px;
+        margin-top: 0px;
+        transform: rotate(0deg);
+    }
+    37% {
+        font-size: 0px;
+        opacity: 0;
+
+    }
+    100% {
+        font-size: 0px;
+        opacity: 0;
+        margin-left: -30px;
+        margin-top: 0px;
+        transform: rotate(15deg);
+    }
+}
+
+@keyframes animation-scale {
+    from {
+        transform: scale(1.0);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1.0);
+    }
+}

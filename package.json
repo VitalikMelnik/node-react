@@ -1,0 +1,32 @@
+{
+  "name": "unicorn",
+  "version": "3.0.0",
+  "private": true,
+  "author": "Vitalik Melnik",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.8.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-node": "^8.0.0",
+    "nodemon": "^1.18.5",
+    "json-loader": "^0.5.4"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "~1.4.3",
+    "dotenv": "^6.1.0",
+    "debug": "~2.6.3",
+    "express": "^4.16.4",
+    "jade": "~1.11.0",
+    "morgan": "^1.9.1",
+    "mongoose": "^5.3.9",
+    "serve-favicon": "^2.5.0"
+  }
+}

@@ -1,0 +1,251 @@
+@media screen and (max-width: 600px) {
+    .about-text-header {
+        font-size: 15px;
+    }
+}
+
+.grid {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.grid .column {
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.grid .column img {
+    position: relative;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.grid .column .content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.grid .column .content::before,
+.grid .column .content::after {
+    pointer-events: none;
+}
+
+.grid .column h2 {
+    word-spacing: -0.15rem;
+    font-weight: 300;
+}
+
+.grid .column h2 span {
+    display: block;
+    font-weight: 800;
+    font-size: 2.8rem;
+}
+
+.grid .column h2,
+.grid .column p {
+    margin: 0;
+}
+
+#west {
+    background: url(../../img/vitalik_img.jpg) no-repeat top center;
+    background-size: cover;
+
+}
+
+#east {
+    background: url(../../img/nazar_img.jpg) no-repeat center top;
+    background-size: cover;
+
+}
+
+#west .content {
+    background: rgba(25, 235, 248, .5);
+}
+
+#east .content {
+    background: rgba(234, 210, 24, .5);
+
+}
+
+.effect-hover h2,
+.effect-hover h3,
+.effect-hover p,
+.effect-hover i {
+    -webkit-transition: opacity 0.35s,
+    -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+.effect-hover .content::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    border: 3px solid #fff;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg) scale3d(0, 0, 1);
+    transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg) scale3d(0, 0, 1);
+}
+
+.effect-hover p:hover,
+.effect-hover p:focus {
+    opacity: 0.6;
+}
+
+.effect-hover p,
+.effect-hover h3 {
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+.effect-hover:hover .content::before {
+    opacity: 1;
+    -webkit-transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg) scale3d(1, 1, 1);
+    transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg) scale3d(1, 1, 1);
+}
+
+.effect-hover:hover h2 {
+    opacity: 0;
+    -webkit-transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.8, 0.8, 1);
+}
+
+.effect-hover:hover h3,
+.effect-hover:hover p {
+    opacity: 1;
+}
+
+.effect-hover:hover i {
+    -webkit-transform: scale3d(2.5, 2.5, 2);
+    transform: scale3d(2.5, 2.5, 2);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    z-index: 99;
+    overflow-x: hidden;
+    background: #eee181;
+}
+
+.overlay .column {
+    display: table;
+    height: 100%;
+}
+
+.product-content {
+    font-size: 1.4rem;
+    padding: 10%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.img-about-us {
+    background: url("../../img/vitalik-img-2.JPG") no-repeat top center;
+    background-size: cover;
+
+}
+
+.img-about-us-2 {
+    background: url("../../img/nazar-img-2.jpg") no-repeat top center;
+    background-size: cover;
+
+}
+
+.close-icon {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    position: absolute;
+    top: 4%;
+    right: 2%;
+}
+
+.close-icon div {
+    display: block;
+    height: 3px;
+    position: relative;
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1) 0s, opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    width: 36px;
+
+}
+
+.close-icon div:first-child {
+    transform: translate3d(0px, 10px, 0px) rotate3d(0, 0, 1, -45deg);
+}
+
+.close-icon div:first-child::after, .close-icon div:first-child::before {
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1) 0s, opacity 0.2s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+}
+
+.close-icon div:last-child {
+    transform: translate3d(0px, 8px, 0px) rotate3d(0, 0, 1, 45deg);
+}
+
+.close-icon div:last-child::after, .close-icon div:last-child::before {
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1) 0.2s, opacity 0.2s cubic-bezier(0.19, 1, 0.22, 1) 0.18s;
+}
+
+.close-icon div::after, .close-icon div::before {
+    content: "";
+    display: block;
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+}
+
+.close-icon div::before {
+    background: none repeat scroll 0 0 black;
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.close-icon div::after {
+    background: none repeat scroll 0 0 #d50d07;
+    opacity: 0;
+    transform: translate3d(100%, 0px, 0px);
+}
+
+.close-icon:hover div::before {
+    opacity: 0;
+    transform: translate3d(-100%, 0px, 0px);
+}
+
+.close-icon:hover div::after {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+

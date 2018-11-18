@@ -1,0 +1,232 @@
+
+.blog-container {
+    width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+
+}
+
+.blog-container a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 300ms ease-in;
+}
+
+.blog-container a:hover {
+    color: #fbfbff;
+}
+
+.blog-svg-wrapper {
+    position: static;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    width: 320px;
+}
+
+.blog-shape {
+    stroke-dasharray: 140, 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    fill: transparent;
+    stroke: #ffffff;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+
+.text-blog {
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 6px;
+    color: #fff;
+    position: relative;
+
+}
+
+.blog-svg-wrapper:hover .blog-shape {
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+}
+
+.blog-block {
+    margin-top: 20px;
+    float: left;
+    text-align: center;
+}
+
+.blog-loading span {
+    display: inline-block;
+    padding: 8px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.blog-ball1 {
+    background: white;
+    -webkit-animation: move-left 800ms ease-in-out infinite alternate;
+    -moz-animation: move-left 800ms ease-in-out infinite alternate;
+    -ms-animation: move-left 800ms ease-in-out infinite alternate;
+    -animation: move-left 800ms ease-in-out infinite alternate;
+}
+
+.blog-ball2 {
+    background: black;
+    -webkit-animation: move-right 800ms ease-in-out infinite alternate;
+    -moz-animation: move-right 800ms ease-in-out infinite alternate;
+    -ms-animation: move-right 800ms ease-in-out infinite alternate;
+    animation: move-right 800ms ease-in-out infinite alternate;
+}
+
+@keyframes move-left {
+    to {
+        -webkit-transform: translate(20px, 0);
+        -ms-transform: translate(20px, 0);
+        -moz-transform: translate(20px, 0);
+        transform: translate(20px, 0);
+        background: white;
+    }
+}
+
+@keyframes move-right {
+    to {
+        -webkit-transform: translate(-20px, 0);
+        -ms-transform: translate(-20px, 0);
+        -moz-transform: translate(-20px, 0);
+        transform: translate(-20px, 0);
+        background: black;
+    }
+}
+
+.blog-search-form {
+    margin-right: -100%;
+    transform: translate(-50%);
+}
+
+.blog-input-group .blog-form-control:hover,
+.blog-input-group .blog-form-control:focus {
+    padding: 10px 20px;
+    width: 300px;
+    color: #000;
+    cursor: auto;
+
+}
+
+.blog-input-group .blog-form-control::-moz-placeholder {
+    color: transparent;
+}
+
+.blog-input-group .blog-form-control::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.blog-input-group .blog-form-control:hover::-moz-placeholder,
+.blog-input-group .blog-form-control:focus::-moz-placeholder {
+    color: #ffffff;
+}
+
+.blog-input-group .blog-form-control:hover::-webkit-input-placeholder,
+.blog-input-group .blog-form-control:focus::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+.blog-input-group .blog-form-control:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0) inset;
+    border-color: #ffffff;
+}
+
+.blog-form-control.blog-search-control {
+    background: url(http://milansavov.com/img/zoom.svg) no-repeat right 11px center / 25px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    color: transparent;
+    font-size: 16px;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    outline: 0 none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    cursor: pointer;
+    -webkit-backface-visibility: hidden;
+    transition: width 0.25s;
+}
+
+.blog-post + .blog-post {
+    margin-top: 2rem;
+}
+
+.blog-post-list {
+    padding-top: 100px;
+}
+
+.blog-post__excerpt {
+    position: relative;
+}
+
+.card {
+    background-color: rgba(79, 79, 79, 0.5);
+    padding: 2rem;
+}
+
+.blog-card__header {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid white;
+}
+
+.blog-card__date {
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
+
+@media (min-width: 768px) {
+    .blog-container {
+        width: 60%;
+    }
+
+    .blog-post {
+        display: flex;
+        align-items: center;
+    }
+
+    .blog-post__excerpt {
+        width: 45%;
+    }
+
+    .blog-post__image {
+        width: 55%;
+    }
+
+    .blog-post:nth-child(odd) .blog-post__excerpt {
+        margin-right: -4rem;
+    }
+
+    .blog-post:nth-child(odd) .card:before {
+        right: -10px;
+    }
+
+    .blog-post:nth-child(odd) .blog-card__header,
+    .blog-post:nth-child(odd) .blog-card__cta {
+        text-align: right;
+    }
+
+    .blog-post:nth-child(even) .blog-post__excerpt {
+        order: 1;
+        margin-left: -4rem;
+    }
+
+    .blog-post:nth-child(even) .card:before {
+        left: -10px;
+    }
+
+    .card:before {
+        bottom: auto;
+    }
+}
+
+
