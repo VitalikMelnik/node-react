@@ -74,7 +74,7 @@ class Blog_list extends React.Component {
         this.logChange = this.logChange.bind(this);
     }
     componentDidMount() {
-        let self = this;
+
         fetch('/users')
             .then(res => res.json())
             .then(posts => this.setState({ date: posts }));

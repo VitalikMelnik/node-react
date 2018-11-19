@@ -15,7 +15,7 @@ class ViewPost extends React.Component {
     }
 
     componentDidMount() {
-        let self = this;
+
         fetch('/users')
             .then(res => res.json())
             .then(posts => this.setState({ date: posts }));

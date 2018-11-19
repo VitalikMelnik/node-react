@@ -13,7 +13,8 @@ import Blog_root from './components/blog_root/Blog_root';
 import { createStore } from 'redux';
 import todoApp from './reducers';
 import { Provider } from 'react-redux'
-import { connect } from 'react-redux'
+//import { connect } from 'react-redux'
+import Login from "./components/login/Login";
 
 
 let store = createStore(todoApp)
@@ -25,6 +26,7 @@ const Routes = (props) => (
   <Router {...props}>
     <Route path="/" component={Home} />
     <Route path="/about" component={About} />
+    <Route path="/login" component={Login} />
     <Route path="/blog" component={Blog_root} />
     <Route path="*" component={NotFound} />
   </Router>

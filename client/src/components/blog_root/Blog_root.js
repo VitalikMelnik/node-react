@@ -2,7 +2,7 @@ import React from 'react'
 import {BrowserRouter,Route, Switch} from 'react-router-dom'
 //import BlogList from './Blog_list'
 import Post from '../post/Post'
-import Users from '../users';
+//import Users from '../users';
 import Blog_list from '../blog_list/Blog_list'
 class Blog_root extends React.Component {
 

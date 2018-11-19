@@ -89,7 +89,7 @@ class ViewNazar extends React.Component {
             <div id="east-overlay" className="overlay">
                 <div className="grid">
                     <div className="column">
-                        <img className="img-about-us-2"/>
+                        <img className="img-about-us-2" alt="img"/>
 
                     </div>
                     <div className="column">
@@ -126,7 +126,7 @@ class ViewVitalik extends React.Component {
             <div id="west-overlay" className="overlay">
                 <div className="grid">
                     <div className="column">
-                        <img className="img-about-us"/>
+                        <img className="img-about-us" alt="img"/>
 
                     </div>
                     <div className="column">
